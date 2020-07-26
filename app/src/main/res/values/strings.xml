@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Pedido Fácil</string>
+
+    //GENERAL
+    <string name="general_add">Añadir</string>
+    <string name="general_success_message">Producto actualizado con éxito</string>
+    <string name="general_error_remove_item">No hay ningún elemento para eliminar</string>
+    <string name="general_error_title">Erro</string>
+    <string name="general_error_message">No hay resultados para mostrar</string>
+    <string name="general_try_again">Intentar nuevamente</string>
+
+    //PREVIOUS ORDERS
+    <string name="previous_orders_title">Productos que pidió anteriormente.</string>
+</resources>

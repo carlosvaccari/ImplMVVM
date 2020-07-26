@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="br.com.cvaccari.orders.features.previousorders.viewmodel.PreviousOrdersViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_xmedium"
+            android:layout_marginTop="@dimen/size_xxmedium"
+            android:gravity="start"
+            android:textSize="@dimen/textsize_h2"
+            android:text="@string/previous_orders_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_previous_orders"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/size_xmedium"
+            android:layout_marginTop="@dimen/size_xmedium"
+            android:layout_marginEnd="@dimen/size_xmedium"
+            app:entries="@{viewModel.items}"
+            app:adapter="@{viewModel.itemsAdapter}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_title" />
+
+        <include
+            android:id="@+id/loading"
+            app:showIf="@{viewModel.isLoading}"
+            layout="@layout/container_loading"/>
+
+        <include
+            android:id="@+id/error"
+            app:showIf="@{viewModel.hasError()}"
+            layout="@layout/container_error"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

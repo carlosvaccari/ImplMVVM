@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="size_small">4dp</dimen>
+    <dimen name="size_medium">8dp</dimen>
+    <dimen name="size_xmedium">16dp</dimen>
+    <dimen name="size_xxmedium">24dp</dimen>
+    <dimen name="size_large">32dp</dimen>
+    <dimen name="size_xlarge">40dp</dimen>
+    <dimen name="size_xxlarge">48dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="textsize_h0">12sp</dimen>
+    <dimen name="textsize_h1">14sp</dimen>
+    <dimen name="textsize_h2">16sp</dimen>
+    <dimen name="textsize_h3">18sp</dimen>
+    <dimen name="textsize_h4">20sp</dimen>
+    <dimen name="textsize_h5">22sp</dimen>
+    <dimen name="textsize_h6">24sp</dimen>
+    <dimen name="textsize_h7">26sp</dimen>
+    <dimen name="textsize_h8">28sp</dimen>
+    <dimen name="textsize_h9">30sp</dimen>
+    <dimen name="textsize_h10">32sp</dimen>
+    <dimen name="textsize_h11">34sp</dimen>
+    <dimen name="textsize_h12">36sp</dimen>
+    <dimen name="textsize_h13">38sp</dimen>
+    <dimen name="textsize_h14">40sp</dimen>
+</resources>
