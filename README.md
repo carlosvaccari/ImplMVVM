@@ -7,5 +7,6 @@
 #### Flow
 #### LiveData
 #### BindingAdapters
+#### Navigation Component
 #### Robolectric
 #### JUnit
