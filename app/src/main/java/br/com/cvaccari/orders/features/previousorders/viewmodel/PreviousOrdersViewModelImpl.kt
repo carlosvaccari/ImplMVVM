@@ -54,7 +54,7 @@ class PreviousOrdersViewModelImpl(
 
     override fun removeItem(item: ItemModel) {
         items.value?.apply {
-            if(this[indexOf(item)].itemCount == 0) {
+            if (this[indexOf(item)].itemCount == 0) {
                 removeItemError()
             } else {
                 this[indexOf(item)].itemCount--

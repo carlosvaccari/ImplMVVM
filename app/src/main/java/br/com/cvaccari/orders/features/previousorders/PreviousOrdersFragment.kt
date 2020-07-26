@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -12,7 +11,6 @@ import br.com.cvaccari.orders.R
 import br.com.cvaccari.orders.databinding.FragmentPreviousOrdersBinding
 import br.com.cvaccari.orders.features.previousorders.viewmodel.PreviousOrdersViewModel
 import com.google.android.material.snackbar.Snackbar
-import org.jetbrains.annotations.TestOnly
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.kodein

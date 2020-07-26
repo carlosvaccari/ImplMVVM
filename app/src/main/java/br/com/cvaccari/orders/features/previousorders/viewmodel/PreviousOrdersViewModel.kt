@@ -1,6 +1,7 @@
 package br.com.cvaccari.orders.features.previousorders.viewmodel
 
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
 import br.com.cvaccari.orders.commons.adapters.ItemsAdapter
 import br.com.cvaccari.orders.features.models.ItemModel
 
